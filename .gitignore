@@ -5,3 +5,5 @@
 .gcc-flags.json
 src/arduino_secrets.h
 .idea/
+.CMakeLists*
+cmake-build-debug/

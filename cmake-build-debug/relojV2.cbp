@@ -8,243 +8,935 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="relojV2">
-				<Option output="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/relojV2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option output="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug/relojV2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/tools/sdk/libc/xtensa-lx106-elf/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/cores/esp8266"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/variants/nodemcu"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/SPI"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Wire"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include-fixed"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/tool-unity"/>
-					<Add directory="/Users/jriquelme/Desarrollos/arduino/relojV2/include"/>
-					<Add directory="/Users/jriquelme/Desarrollos/arduino/relojV2/src"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/tools/sdk/libc/xtensa-lx106-elf/include"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/cores/esp8266"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/variants/nodemcu"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/SPI"/>
+					<Add directory="/Users/jose/.platformio/lib/Adafruit DHT Unified_ID18"/>
+					<Add directory="/Users/jose/.platformio/lib/Adafruit GFX Library_ID13"/>
+					<Add directory="/Users/jose/.platformio/lib/Adafruit Unified Sensor_ID31"/>
+					<Add directory="/Users/jose/.platformio/lib/AutoPID_ID1925"/>
+					<Add directory="/Users/jose/.platformio/lib/DHT sensor library_ID19"/>
+					<Add directory="/Users/jose/.platformio/lib/LiquidCrystal_I2C_ID576"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Wire"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include-fixed"/>
+					<Add directory="/Users/jose/.platformio/packages/tool-unity"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/include"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 relojV2"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 relojV2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="relojV2/fast">
-				<Option output="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/relojV2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option output="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug/relojV2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/tools/sdk/libc/xtensa-lx106-elf/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/cores/esp8266"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/variants/nodemcu"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/SPI"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/Wire"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include-fixed"/>
-					<Add directory="/Users/jriquelme/.platformio/packages/tool-unity"/>
-					<Add directory="/Users/jriquelme/Desarrollos/arduino/relojV2/include"/>
-					<Add directory="/Users/jriquelme/Desarrollos/arduino/relojV2/src"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/tools/sdk/libc/xtensa-lx106-elf/include"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/cores/esp8266"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/tools/sdk/lwip2/include"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/variants/nodemcu"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFi/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/SPI"/>
+					<Add directory="/Users/jose/.platformio/lib/Adafruit DHT Unified_ID18"/>
+					<Add directory="/Users/jose/.platformio/lib/Adafruit GFX Library_ID13"/>
+					<Add directory="/Users/jose/.platformio/lib/Adafruit Unified Sensor_ID31"/>
+					<Add directory="/Users/jose/.platformio/lib/AutoPID_ID1925"/>
+					<Add directory="/Users/jose/.platformio/lib/DHT sensor library_ID19"/>
+					<Add directory="/Users/jose/.platformio/lib/LiquidCrystal_I2C_ID576"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ArduinoOTA"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/DNSServer/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/EEPROM"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266AVRISP/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPClient/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266HTTPUpdateServer/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266LLMNR"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266NetBIOS"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266SSDP"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WebServer/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266WiFiMesh/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266httpUpdate/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/ESP8266mDNS"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Ethernet/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/GDBStub/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Hash/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/SD/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/Wire"/>
+					<Add directory="/Users/jose/.platformio/packages/framework-arduinoespressif8266/libraries/esp8266/src"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/xtensa-lx106-elf/include/c++/4.8.2/xtensa-lx106-elf"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include"/>
+					<Add directory="/Users/jose/.platformio/packages/toolchain-xtensa/lib/gcc/xtensa-lx106-elf/4.8.2/include-fixed"/>
+					<Add directory="/Users/jose/.platformio/packages/tool-unity"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/include"/>
+					<Add directory="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 relojV2/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 relojV2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_REBUILD_PROJECT_INDEX">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_REBUILD_PROJECT_INDEX"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPDATE_ALL">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPDATE_ALL"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPLOADFS">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOADFS"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_BUILD">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_BUILD"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_PROGRAM">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_PROGRAM"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_TEST">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_TEST"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_CLEAN">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_CLEAN"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PLATFORMIO_UPLOAD">
-				<Option working_dir="/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug"/>
+				<Option working_dir="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 PLATFORMIO_UPLOAD"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/jose/odrive/Google\ Drive\ Personal/Arduino/Proyecto/relojV2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jriquelme/Desarrollos/arduino/relojV2/src/main.cpp">
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/.gitignore">
 			<Option target="relojV2"/>
 		</Unit>
-		<Unit filename="/Users/jriquelme/Desarrollos/arduino/relojV2/CMakeLists.txt">
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/.library.json">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/.travis.yml">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Adafruit_GFX.cpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Adafruit_GFX.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Adafruit_SPITFT.cpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Adafruit_SPITFT.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Adafruit_SPITFT_Macros.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMono12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMono18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMono24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMono9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoBold12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoBold18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoBold24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoBold9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoBoldOblique12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoBoldOblique18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoBoldOblique24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoBoldOblique9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoOblique12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoOblique18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoOblique24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeMonoOblique9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSans12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSans18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSans24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSans9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansBold12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansBold18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansBold24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansBold9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansBoldOblique12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansBoldOblique18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansBoldOblique24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansBoldOblique9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansOblique12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansOblique18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansOblique24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSansOblique9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerif12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerif18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerif24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerif9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifBold12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifBold18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifBold24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifBold9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifBoldItalic12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifBoldItalic18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifBoldItalic24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifBoldItalic9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifItalic12pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifItalic18pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifItalic24pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/FreeSerifItalic9pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/Org_01.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/Picopixel.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/Tiny3x3a2pt7b.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/Fonts/TomThumb.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/README.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/examples/mock_ili9341/mock_ili9341.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/fontconvert/fontconvert.c">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/fontconvert/fontconvert_win.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/fontconvert/makefonts.sh">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/gfxfont.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/glcdfont.c">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/library.properties">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit GFX Library_ID13/license.txt">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/.github/ISSUE_TEMPLATE.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/.github/PULL_REQUEST_TEMPLATE.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/.gitignore">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/.library.json">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/.travis.yml">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/Adafruit_ILI9341.cpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/Adafruit_ILI9341.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/README.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/breakouttouchpaint/.esp8266.test.skip">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/breakouttouchpaint/breakouttouchpaint.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/fulltest_featherwing/.mega2560.test.skip">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/fulltest_featherwing/fulltest_featherwing.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/graphicstest/graphicstest.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/graphicstest_featherwing/.mega2560.test.skip">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/graphicstest_featherwing/graphicstest_featherwing.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/onoffbutton/onoffbutton.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/onoffbutton_breakout/.esp8266.test.skip">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/onoffbutton_breakout/onoffbutton_breakout.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/pictureEmbed/dragon.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/pictureEmbed/pictureEmbed.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/spitftbitmap/spitftbitmap.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/touchpaint/touchpaint.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/touchpaint_featherwing/.mega2560.test.skip">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/examples/touchpaint_featherwing/touchpaint_featherwing.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Adafruit ILI9341_ID571/library.properties">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/.clang-format">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/.gitattributes">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/.github/ISSUE_TEMPLATE.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/.gitignore">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/.library.json">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/.mbedignore">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/.travis.yml">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/ArduinoJson.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/CHANGELOG.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/CMakeLists.txt">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/CONTRIBUTING.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/LICENSE.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/README.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/SUPPORT.md">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/appveyor.yml">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/banner.svg">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/examples/JsonConfigFile/JsonConfigFile.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/examples/JsonGeneratorExample/JsonGeneratorExample.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/examples/JsonHttpClient/JsonHttpClient.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/examples/JsonParserExample/JsonParserExample.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/examples/JsonServer/JsonServer.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/examples/JsonUdpBeacon/JsonUdpBeacon.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/examples/ProgmemExample/ProgmemExample.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/examples/StringExample/StringExample.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/keywords.txt">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/library.json">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/library.properties">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Configuration.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/Encoding.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/JsonBufferAllocated.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/JsonFloat.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/JsonInteger.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/JsonVariantAs.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/JsonVariantContent.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/JsonVariantDefault.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/JsonVariantType.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/List.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/ListConstIterator.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/ListIterator.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/ListNode.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/NonCopyable.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/ReferenceType.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Data/ValueSaver.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/Comments.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/JsonParser.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/JsonParserImpl.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Deserialization/StringWriter.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/DynamicJsonBuffer.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonArray.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonArrayImpl.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonArraySubscript.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonBuffer.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonBufferBase.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonBufferImpl.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonObject.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonObjectImpl.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonObjectSubscript.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonPair.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonVariant.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonVariantBase.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonVariantCasts.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonVariantComparisons.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonVariantImpl.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonVariantOr.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/JsonVariantSubscripts.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/attributes.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/ctype.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/isFloat.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/isInteger.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/math.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/parseFloat.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Polyfills/parseInteger.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/RawJson.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DummyPrint.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/DynamicStringBuilder.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/FloatParts.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/IndentedPrint.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/JsonPrintable.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/JsonSerializer.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/JsonSerializerImpl.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/JsonWriter.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/Prettyfier.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StaticStringBuilder.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/Serialization/StreamPrintAdapter.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StaticJsonBuffer.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringTraits/ArduinoStream.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringTraits/CharPointer.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringTraits/FlashString.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringTraits/StdStream.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringTraits/StdString.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/StringTraits/StringTraits.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/EnableIf.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/FloatTraits.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsArray.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsBaseOf.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsChar.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsConst.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsFloatingPoint.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsIntegral.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsSame.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsSignedIntegral.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsUnsignedIntegral.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/IsVariant.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/RemoveConst.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/TypeTraits/RemoveReference.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/ArduinoJson_ID64/src/ArduinoJson/version.hpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/.library.json">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/DateStrings.cpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/Readme.txt">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/Time.cpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/Time.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/TimeLib.h">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/Processing/SyncArduinoClock/SyncArduinoClock.pde">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/Processing/SyncArduinoClock/readme.txt">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeArduinoDue/TimeArduinoDue.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeGPS/TimeGPS.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeNTP/TimeNTP.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeNTP_ESP8266WiFi/TimeNTP_ESP8266WiFi.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeRTC/TimeRTC.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeRTCLog/TimeRTCLog.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeRTCSet/TimeRTCSet.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeSerial/TimeSerial.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeSerialDateStrings/TimeSerialDateStrings.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/examples/TimeTeensy3/TimeTeensy3.ino">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/keywords.txt">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/library.json">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/.piolibdeps/Time_ID44/library.properties">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/src/arduino_secrets.h.sample">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/src/main.cpp">
+			<Option target="relojV2"/>
+		</Unit>
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/jriquelme/Desarrollos/arduino/relojV2/CMakeListsPrivate.txt">
+		<Unit filename="/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/CMakeListsPrivate.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

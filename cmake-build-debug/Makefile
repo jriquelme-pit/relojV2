@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/jriquelme/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5153.40/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = "/Users/jose/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5153.40/CLion.app/Contents/bin/cmake/mac/bin/cmake"
 
 # The command to remove a file.
-RM = "/Users/jriquelme/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5153.40/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
+RM = "/Users/jose/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5153.40/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jriquelme/Desarrollos/arduino/relojV2
+CMAKE_SOURCE_DIR = "/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"/Users/jriquelme/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5153.40/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"/Users/jose/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5153.40/CLion.app/Contents/bin/cmake/mac/bin/cmake" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"/Users/jriquelme/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5153.40/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+	"/Users/jose/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5153.40/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/CMakeFiles /Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug/CMakeFiles" "/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jriquelme/Desarrollos/arduino/relojV2/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/jose/odrive/Google Drive Personal/Arduino/Proyecto/relojV2/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -227,6 +227,195 @@ PLATFORMIO_UPLOAD/fast:
 	$(MAKE) -f CMakeFiles/PLATFORMIO_UPLOAD.dir/build.make CMakeFiles/PLATFORMIO_UPLOAD.dir/build
 .PHONY : PLATFORMIO_UPLOAD/fast
 
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.o: .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.o
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.o
+
+# target to build an object file
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.o:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.o
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.o
+
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.i: .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.i
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.i
+
+# target to preprocess a source file
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.i:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.i
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.i
+
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.s: .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.s
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.s
+
+# target to generate assembly for a file
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.s:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.s
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.cpp.s
+
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.o: .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.o
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.o
+
+# target to build an object file
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.o:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.o
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.o
+
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.i: .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.i
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.i
+
+# target to preprocess a source file
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.i:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.i
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.i
+
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.s: .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.s
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.s
+
+# target to generate assembly for a file
+.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.s:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.s
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.cpp.s
+
+.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.o: .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.o
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.o
+
+# target to build an object file
+.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.o:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.o
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.o
+
+.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.i: .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.i
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.i
+
+# target to preprocess a source file
+.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.i:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.i
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.i
+
+.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.s: .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.s
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.s
+
+# target to generate assembly for a file
+.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.s:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.s
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.c.s
+
+.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.o: .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.o
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.o
+
+# target to build an object file
+.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.o:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.o
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.o
+
+.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.i: .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.i
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.i
+
+# target to preprocess a source file
+.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.i:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.i
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.i
+
+.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.s: .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.s
+
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.s
+
+# target to generate assembly for a file
+.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.s:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.s
+.PHONY : .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.c.s
+
+.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.o: .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.o
+
+.PHONY : .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.o
+
+# target to build an object file
+.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.o:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.o
+.PHONY : .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.o
+
+.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.i: .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.i
+
+.PHONY : .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.i
+
+# target to preprocess a source file
+.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.i:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.i
+.PHONY : .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.i
+
+.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.s: .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.s
+
+.PHONY : .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.s
+
+# target to generate assembly for a file
+.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.s:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.s
+.PHONY : .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.cpp.s
+
+.piolibdeps/Time_ID44/DateStrings.o: .piolibdeps/Time_ID44/DateStrings.cpp.o
+
+.PHONY : .piolibdeps/Time_ID44/DateStrings.o
+
+# target to build an object file
+.piolibdeps/Time_ID44/DateStrings.cpp.o:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Time_ID44/DateStrings.cpp.o
+.PHONY : .piolibdeps/Time_ID44/DateStrings.cpp.o
+
+.piolibdeps/Time_ID44/DateStrings.i: .piolibdeps/Time_ID44/DateStrings.cpp.i
+
+.PHONY : .piolibdeps/Time_ID44/DateStrings.i
+
+# target to preprocess a source file
+.piolibdeps/Time_ID44/DateStrings.cpp.i:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Time_ID44/DateStrings.cpp.i
+.PHONY : .piolibdeps/Time_ID44/DateStrings.cpp.i
+
+.piolibdeps/Time_ID44/DateStrings.s: .piolibdeps/Time_ID44/DateStrings.cpp.s
+
+.PHONY : .piolibdeps/Time_ID44/DateStrings.s
+
+# target to generate assembly for a file
+.piolibdeps/Time_ID44/DateStrings.cpp.s:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Time_ID44/DateStrings.cpp.s
+.PHONY : .piolibdeps/Time_ID44/DateStrings.cpp.s
+
+.piolibdeps/Time_ID44/Time.o: .piolibdeps/Time_ID44/Time.cpp.o
+
+.PHONY : .piolibdeps/Time_ID44/Time.o
+
+# target to build an object file
+.piolibdeps/Time_ID44/Time.cpp.o:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Time_ID44/Time.cpp.o
+.PHONY : .piolibdeps/Time_ID44/Time.cpp.o
+
+.piolibdeps/Time_ID44/Time.i: .piolibdeps/Time_ID44/Time.cpp.i
+
+.PHONY : .piolibdeps/Time_ID44/Time.i
+
+# target to preprocess a source file
+.piolibdeps/Time_ID44/Time.cpp.i:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Time_ID44/Time.cpp.i
+.PHONY : .piolibdeps/Time_ID44/Time.cpp.i
+
+.piolibdeps/Time_ID44/Time.s: .piolibdeps/Time_ID44/Time.cpp.s
+
+.PHONY : .piolibdeps/Time_ID44/Time.s
+
+# target to generate assembly for a file
+.piolibdeps/Time_ID44/Time.cpp.s:
+	$(MAKE) -f CMakeFiles/relojV2.dir/build.make CMakeFiles/relojV2.dir/.piolibdeps/Time_ID44/Time.cpp.s
+.PHONY : .piolibdeps/Time_ID44/Time.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -271,6 +460,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... PLATFORMIO_CLEAN"
 	@echo "... PLATFORMIO_UPLOAD"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.o"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.i"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_GFX.s"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.o"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.i"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/Adafruit_SPITFT.s"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.o"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.i"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/fontconvert/fontconvert.s"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.o"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.i"
+	@echo "... .piolibdeps/Adafruit_GFX_Library_ID13/glcdfont.s"
+	@echo "... .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.o"
+	@echo "... .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.i"
+	@echo "... .piolibdeps/Adafruit_ILI9341_ID571/Adafruit_ILI9341.s"
+	@echo "... .piolibdeps/Time_ID44/DateStrings.o"
+	@echo "... .piolibdeps/Time_ID44/DateStrings.i"
+	@echo "... .piolibdeps/Time_ID44/DateStrings.s"
+	@echo "... .piolibdeps/Time_ID44/Time.o"
+	@echo "... .piolibdeps/Time_ID44/Time.i"
+	@echo "... .piolibdeps/Time_ID44/Time.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
