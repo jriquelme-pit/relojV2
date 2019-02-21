@@ -7,7 +7,7 @@ char password[] = SECRET_PASS;  // your network key
 
 //Add a SSL client
 WiFiClientSecure client;
-String clima = "";
+
 
 class Red{
 public:
