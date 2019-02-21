@@ -6,4 +6,6 @@
 src/arduino_secrets.h
 .idea/
 .CMakeLists*
+CMakeListsPrivate.txt
 cmake-build-debug/
+.travis.yml
