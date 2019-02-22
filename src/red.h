@@ -26,10 +26,17 @@ public:
     }
 
 
-    String getWeather() {
+    String getDate(){
+        return getResponse(HOST_TIME, URI_TIME, 80);
 
-        //Serial.print("init obteniendo datos");
-        String title = "";
+    }
+
+    String getWeather() {
+        return getResponse(HOST, URI, 443);
+    }
+    String getResponse(String sHost, String sUri, long port) {
+
+        String response = "";
         String headers = "";
         String body = "";
         bool finishedHeaders = false;
@@ -37,11 +44,14 @@ public:
         bool gotResponse = false;
         long now;
 
-        char host[] = HOST;
+        //char host[] = HOST;
+        char host[sHost.length() + 1] ;
 
-        if (client.connect(host, 443)) {
-            //Serial.println("connected");
-            String URL = URI;
+        sHost.toCharArray(host, sHost.length() + 1);
+
+        if (client.connect(host, port)) {
+
+            String  URL = sUri;
 
             client.println("GET " + URL + " HTTP/1.1");
             client.print("Host: ");
@@ -55,7 +65,9 @@ public:
             // checking the timeout
             while (millis() - now < 1500) {
                 while (client.available()) {
+                    Serial.println("client.available");
                     char c = client.read();
+                    Serial.print(c);
                     if (finishedHeaders) {
                         body=body+c;
                     } else {
@@ -75,15 +87,13 @@ public:
                     gotResponse = true;
                 }
                 if (gotResponse) {
-
-
-                    title = body;
+                    response = body;
                     break;
                 }
             }
         }
-        //Serial.println(body);
-        return title;
+
+        return response;
     }
 
 };

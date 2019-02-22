@@ -12,35 +12,50 @@
 #include "red.h"
 
 
+#define ligth 4 //D2
+
 Hora hora = Hora();
 Fecha fecha = Fecha();
 Clima clima = Clima();
 Lcd lcd = Lcd();
 Red red = Red();
 
+
 void setup() {
 
     Serial.begin(19200);
+    pinMode(ligth, OUTPUT);
 
-
+    analogWrite(ligth, 255);
     lcd.cargandoDatos();
-    String ip = red.connect();
-    /*lcd.conectado(ip);
-    String clima = red.getWeather();
+    //String ip = red.connect();
+    //Serial.println("Obteniendo el tiempo");
+    //String datosTiempo = red.getDate();
+    //Serial.println(datosTiempo);
+    //hora.setData(datosTiempo);
 
-    DynamicJsonBuffer jsonBuffer;
-    JsonObject &root = jsonBuffer.parseObject(clima);
-    Serial.println("obteniendo info");
-    Serial.println(root["a"]["1"].as<String>());
-    Serial.println("obteniendo final");
-*/
+    clima.dummy();
+
+
     lcd.clear();
     lcd.printFecha(fecha);
     lcd.printHora(hora);
+    lcd.printClima(clima);
 
 }
 
 void loop() {
-
-
+    /*analogWrite(ligth, 1);
+    delay(500);
+    analogWrite(ligth, 50);
+    delay(500);
+    analogWrite(ligth, 100);
+    delay(500);
+    analogWrite(ligth, 150);
+    delay(500);
+    analogWrite(ligth, 200);
+    delay(500);
+    analogWrite(ligth, 255);
+    delay(500);
+*/
 }
