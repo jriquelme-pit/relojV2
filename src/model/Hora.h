@@ -9,8 +9,13 @@ public:
 
     }
 
-    String toString(){
-        return zero(String(this->hora), 2) + ":" + zero(String(this->hora), 2);
+    String toString(boolean printHora){
+
+        String spe = " ";
+        if(printHora){
+          spe = ":";
+        };
+        return zero(String(this->hora), 2) + spe + zero(String(this->hora), 2);
     }
 
     void setData(String Data){

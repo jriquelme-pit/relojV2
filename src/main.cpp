@@ -38,13 +38,23 @@ void setup() {
 
 
     lcd.clear();
+    lcd.printPlantilla();
     lcd.printFecha(fecha);
     lcd.printHora(hora);
     lcd.printClima(clima);
 
-}
 
+
+
+
+
+
+
+}
 void loop() {
+    delay(1000);
+    lcd.printHora(hora);
+
     /*analogWrite(ligth, 1);
     delay(500);
     analogWrite(ligth, 50);
