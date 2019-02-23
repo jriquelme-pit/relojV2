@@ -26,12 +26,6 @@ public:
         return ip.toString();
     }
 
-
-    String getDate(){
-        return getResponse(HOST_TIME, URI_TIME, 80);
-
-    }
-
     String getWeather(boolean forceUpdate=false) {
         if (forceUpdate) {
             Serial.println("Obteniendo Informacion de la red");
