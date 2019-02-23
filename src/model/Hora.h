@@ -15,7 +15,7 @@ public:
         if(printHora){
           spe = ":";
         };
-        return zero(String(this->hora), 2) + spe + zero(String(this->hora), 2);
+        return zero(String(this->hora), 2) + spe + zero(String(this->minuto), 2);
     }
 
     void setData(String Data){
@@ -25,6 +25,10 @@ public:
         hora = root["hours"].as<int>();
         minuto =  root["minutes"].as<int>();
 
+    }
 
+    void refresh(DateTime now){
+        this->minuto = now.minute();
+        this->hora = now.hour();
     }
 };

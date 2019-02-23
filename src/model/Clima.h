@@ -4,6 +4,10 @@ public:
     int max = 0;
     String nombre = "";
 
+    String toString(){
+        return String(min)  + " - " + String(max) + nombre;
+    };
+
 };
 
 class Clima{
@@ -26,16 +30,19 @@ public:
     }
     void parserJson(String json){
         DynamicJsonBuffer jsonBuffer;
+
+        Serial.println(json);
         JsonObject &root = jsonBuffer.parseObject(json);
 
 
-        hoy.max = root["a"]["1"].as<int>();
-        hoy.min = root["a"]["2"].as<int>();
+        hoy.min = root["a"]["1"].as<int>();
+        hoy.max = root["a"]["2"].as<int>();
         hoy.nombre = root["day"]["a"].as<String>();
 
-        siguiente.max = root["b"]["1"].as<int>();
-        siguiente.min = root["b"]["2"].as<int>();
+        siguiente.min = root["b"]["1"].as<int>();
+        siguiente.max = root["b"]["2"].as<int>();
         siguiente.nombre = root["day"]["b"].as<String>();
+
     }
 
     void dummy(){

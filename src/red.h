@@ -7,6 +7,7 @@ char password[] = SECRET_PASS;  // your network key
 
 //Add a SSL client
 WiFiClientSecure client;
+String jsonWeather = "";
 
 
 class Red{
@@ -31,8 +32,12 @@ public:
 
     }
 
-    String getWeather() {
-        return getResponse(HOST, URI, 443);
+    String getWeather(boolean forceUpdate=false) {
+        if (forceUpdate) {
+            Serial.println("Obteniendo Informacion de la red");
+            jsonWeather = getResponse(HOST, URI, 443);
+        }
+        return jsonWeather;
     }
     String getResponse(String sHost, String sUri, long port) {
 
@@ -59,15 +64,11 @@ public:
             client.println("User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36");
             client.println("cache-control: max-age=0");
             client.println("");
-
-
             now = millis();
             // checking the timeout
             while (millis() - now < 1500) {
                 while (client.available()) {
-                    Serial.println("client.available");
                     char c = client.read();
-                    Serial.print(c);
                     if (finishedHeaders) {
                         body=body+c;
                     } else {

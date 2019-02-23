@@ -2,7 +2,7 @@
 
 
 #define TFT_DC 2
-#define TFT_CS 5
+#define TFT_CS 16
 #define TFT_RST -1
 
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
@@ -44,14 +44,15 @@ public:
     }
 
     void printFecha(Fecha fecha) {
-        tft.setTextColor(ST7735_WHITE);
+
+        tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
         tft.setTextSize(2);
         tft.setCursor(5, 2);
         tft.println(fecha.toString());
     }
 
     void printHora(Hora hora) {
-        tft.setTextColor(ST7735_WHITE);
+        tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
         tft.setTextSize(4);
         tft.setCursor(5, 22);
         tft.println(hora.toString(separador));
@@ -64,7 +65,7 @@ public:
 
     void printClima(Clima clima) {
 
-        tft.setTextColor(ST7735_WHITE);
+        tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
         tft.setTextSize(1);
         tft.setCursor(2, 57);
         tft.println(clima.getHoy().nombre);
