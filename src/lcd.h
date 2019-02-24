@@ -15,7 +15,6 @@ public:
     boolean separador = true;
 
 
-
     Lcd() {
         tft.initR(INITR_BLACKTAB);
     }
@@ -23,7 +22,8 @@ public:
     void printPlantilla() {
         tft.drawLine(0, 18, tft.height() - 1, 18, ST77XX_GREEN);
         tft.drawLine(0, 54, tft.height() - 1, 54, ST77XX_GREEN);
-        tft.drawLine(tft.width()/2, 54, tft.width()/2, 100, ST77XX_GREEN);
+        tft.drawLine(tft.width() / 2, 54, tft.width() / 2, 105, ST77XX_GREEN);
+        tft.drawLine(0, 105, tft.height() - 1, 105, ST77XX_GREEN);
 
     }
 
@@ -65,13 +65,14 @@ public:
 
     void printClima(Clima clima) {
 
-        tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
+        tft.setTextColor(ST7735_YELLOW, ST7735_BLACK);
         tft.setTextSize(1);
         tft.setCursor(2, 57);
         tft.println(clima.getHoy().nombre);
         tft.setCursor(70, 57);
         tft.println(clima.getSiguiente().nombre);
 
+        tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
         tft.setCursor(2, 68);
         tft.println("min:");
         tft.setTextSize(2);
@@ -114,14 +115,38 @@ public:
 
     }
 
-    void clearTest(String text){
+    void clearTest(String text) {
 
-    tft.setTextSize(4);
-    tft.setCursor(5, 22);
-    tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
-    tft.println(text);
+        tft.setTextSize(4);
+        tft.setCursor(5, 22);
+        tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
+        tft.println(text);
 
-}
+    }
+
+    void printClimaActual(Clima clima, Hora hora){
+        tft.setTextColor(ST7735_YELLOW, ST7735_BLACK);
+
+        tft.setTextSize(1);
+        tft.setCursor(2, 110);
+        tft.println("today:");
+
+        tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
+        tft.setTextSize(2);
+        tft.setCursor(38, 110);
+        tft.println(clima.getHoraClima()[hora.getCiclo()].temp);
+
+        tft.setTextSize(1);
+        tft.setCursor(65, 110);
+        tft.println("c");
+
+        tft.setTextSize(2);
+        tft.setTextWrap(true);
+        tft.setCursor(2, 128);
+        tft.println(clima.getHoraClima()[hora.getCiclo()].desc);
+
+
+    };
 
 };
 

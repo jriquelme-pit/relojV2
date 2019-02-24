@@ -66,30 +66,25 @@ void setup() {
     lcd.printFecha(fecha);
     lcd.printHora(hora);
     lcd.printClima(clima);
-
-
-
-
-
-
-
-
+    lcd.printClimaActual(clima, hora);
 
 }
+static unsigned long timeMillis = millis();
 void loop() {
-    delay(1000);
-    fecha.refresh(rtc.now());
-    hora.refresh(rtc.now());
+    if (millis() - timeMillis > 1000) {
+        timeMillis = millis();
+        fecha.refresh(rtc.now());
+        hora.refresh(rtc.now());
 
-
-    if((hora.hora == 1 || hora.hora == 6 || hora.hora == 12) && hora.minuto == 0){
-
-        clima.parserJson(red.getWeather(true));
-        lcd.printClima(clima);
+        if((hora.hora == 2 || hora.hora == 6 || hora.hora == 14) && hora.minuto == 0){
+            clima.parserJson(red.getWeather(true));
+            lcd.printClima(clima);
+        }
+        lcd.printHora(hora);
+        lcd.printFecha(fecha);
     }
 
-    lcd.printHora(hora);
-    lcd.printFecha(fecha);
+
 
     /*analogWrite(ligth, 1);
     delay(500);
