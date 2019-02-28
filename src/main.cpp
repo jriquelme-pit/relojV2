@@ -66,7 +66,7 @@ void setup() {
     lcd.printFecha(fecha);
     lcd.printHora(hora);
     lcd.printClima(clima);
-
+    lcd.printClimaActual(clima, hora);
 
 }
 static unsigned long timeMillis = millis();
