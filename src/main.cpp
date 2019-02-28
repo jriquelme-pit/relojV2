@@ -66,10 +66,34 @@ void setup() {
     lcd.printFecha(fecha);
     lcd.printHora(hora);
     lcd.printClima(clima);
-    lcd.printClimaActual(clima, hora);
+
 
 }
 static unsigned long timeMillis = millis();
+static unsigned long timeMillisHours = 0;
+int hours = -1;
+
+void setBrightness(){
+
+    if(hora.hora >= 8 and hora.hora < 19 ){
+        analogWrite(ligth, 255);
+    }else if (hora.hora = 19){
+        analogWrite(ligth, 200);
+    }else if (hora.hora = 20 ){
+        analogWrite(ligth, 150);
+    }else if (hora.hora = 22 ){
+        analogWrite(ligth, 100);
+    }else if (hora.hora >=23 and hora.hora < 7){
+        analogWrite(ligth, 1);
+    } else if (hora.hora = 7 ){
+        analogWrite(ligth, 150);
+    }
+
+
+    delay(500);
+}
+
+
 void loop() {
     if (millis() - timeMillis > 1000) {
         timeMillis = millis();
@@ -82,21 +106,12 @@ void loop() {
         }
         lcd.printHora(hora);
         lcd.printFecha(fecha);
+        setBrightness();
+
+        if(hora.hora != hours and hora.minuto == 0){
+            lcd.printClimaActual(clima, hora);
+            hours = hora.hora;
+        }
     }
 
-
-
-    /*analogWrite(ligth, 1);
-    delay(500);
-    analogWrite(ligth, 50);
-    delay(500);
-    analogWrite(ligth, 100);
-    delay(500);
-    analogWrite(ligth, 150);
-    delay(500);
-    analogWrite(ligth, 200);
-    delay(500);
-    analogWrite(ligth, 255);
-    delay(500);
-*/
 }

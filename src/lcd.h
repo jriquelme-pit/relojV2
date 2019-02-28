@@ -133,17 +133,34 @@ public:
 
         tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
         tft.setTextSize(2);
+
         tft.setCursor(38, 110);
-        tft.println(clima.getHoraClima()[hora.getCiclo()].temp);
+        HoraClima clima1 = clima.getHoraClima(hora.hora);
+        tft.println(clima1.temp);
 
         tft.setTextSize(1);
         tft.setCursor(65, 110);
         tft.println("c");
 
+
+        tft.setTextColor(ST7735_YELLOW, ST7735_BLACK);
+        tft.setTextSize(1);
+        tft.setCursor(2, 110);
+        tft.println("windchill:");
+
+        tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
+        tft.setTextSize(2);
+        tft.setCursor(80, 110);
+        tft.println(clima1.temp);
+
+        tft.setTextSize(1);
+        tft.setCursor(120, 110);
+        tft.println("c");
+
         tft.setTextSize(2);
         tft.setTextWrap(true);
         tft.setCursor(2, 128);
-        tft.println(clima.getHoraClima()[hora.getCiclo()].desc);
+        tft.println(clima1.desc);
 
 
     };

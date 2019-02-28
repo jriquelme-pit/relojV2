@@ -28,8 +28,7 @@ public:
 
     String getWeather(boolean forceUpdate=false) {
         if (forceUpdate) {
-            Serial.println("Obteniendo Informacion de la red");
-            jsonWeather = getResponse(HOST, URI, 443);
+            jsonWeather = getResponse(HOST, URI, PORT);
         }
         return jsonWeather;
     }
