@@ -66,10 +66,12 @@ void setup() {
     lcd.printFecha(fecha);
     lcd.printHora(hora);
     lcd.printClima(clima);
-    lcd.printClimaActual(clima, hora);
+
 
 }
 static unsigned long timeMillis = millis();
+int hours = -1;
+
 void loop() {
     if (millis() - timeMillis > 1000) {
         timeMillis = millis();
@@ -79,6 +81,12 @@ void loop() {
         if((hora.hora == 2 || hora.hora == 6 || hora.hora == 14) && hora.minuto == 0){
             clima.parserJson(red.getWeather(true));
             lcd.printClima(clima);
+
+        }
+
+        if(hora.hora != hours and hora.minuto == 0){
+            lcd.printClimaActual(clima, hora);
+            hours = hora.hora;
         }
         lcd.printHora(hora);
         lcd.printFecha(fecha);
