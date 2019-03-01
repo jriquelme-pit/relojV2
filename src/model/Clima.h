@@ -61,9 +61,9 @@ public:
 
         for (int i = 0; i < 24; i++) {
             horaClima[i] = HoraClima();
-            horaClima[i].temp = root["hour"][i+1]["temp"].as<int>();
-            horaClima[i].windchill = root["hour"][i+1]["windchill"].as<int>();
-            horaClima[i].desc = root["hour"][i+1]["desc"].as<String>();
+            horaClima[i].temp = root["hour"][i]["temp"].as<int>();
+            horaClima[i].windchill = root["hour"][i]["windchill"].as<int>();
+            horaClima[i].desc = root["hour"][i]["desc"].as<String>();
 
             Serial.println(horaClima[i].toString());
         }
