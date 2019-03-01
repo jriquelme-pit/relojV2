@@ -125,7 +125,7 @@ public:
     }
 
     void printClimaActual(Clima clima, Hora hora){
-        tft.setTextColor(ST7735_YELLOW, ST7735_BLACK);
+        /*tft.setTextColor(ST7735_YELLOW, ST7735_BLACK);
 
         tft.setTextSize(1);
         tft.setCursor(2, 110);
@@ -142,7 +142,8 @@ public:
         tft.setCursor(65, 110);
         tft.println("c");
 
-
+*/
+        HoraClima clima1 = clima.getHoraClima(hora.hora);
         tft.setTextColor(ST7735_YELLOW, ST7735_BLACK);
         tft.setTextSize(1);
         tft.setCursor(2, 110);
@@ -150,11 +151,11 @@ public:
 
         tft.setTextColor(ST7735_WHITE, ST7735_BLACK);
         tft.setTextSize(2);
-        tft.setCursor(80, 110);
+        tft.setCursor(65, 110);
         tft.println(clima1.temp);
 
         tft.setTextSize(1);
-        tft.setCursor(120, 110);
+        tft.setCursor(95, 110);
         tft.println("c");
 
         tft.setTextSize(2);

@@ -4,6 +4,10 @@ public:
     int windchill = 0;
     String desc = "";
 
+    String toString(){
+        return String(temp) +"-"+ String(windchill) +"-"+ desc;
+    }
+
 };
 
 
@@ -41,12 +45,10 @@ public:
     HoraClima getHoraClima(int hour){
         return horaClima[hour];
     }
-    void parserJson(String json1, String json2){
+    bool parserJson(String weather){
         DynamicJsonBuffer jsonBuffer;
 
-        Serial.println(json);
-        JsonObject &root = jsonBuffer.parseObject(json);
-
+        JsonObject &root = jsonBuffer.parseObject(weather);
 
         hoy.min = root["a"]["1"].as<int>();
         hoy.max = root["a"]["2"].as<int>();
@@ -57,12 +59,18 @@ public:
         siguiente.nombre = root["day"]["b"].as<String>();
 
 
-        for (int i = 0; i < 24; ++i) {
+        for (int i = 0; i < 24; i++) {
             horaClima[i] = HoraClima();
-            horaClima[i].temp = root["hour"][String(i+1)]["temp"].as<int>();
-            horaClima[i].windchill = root["hour"][String(i+1)]["windchill"].as<int>();
-            horaClima[i].desc = root["hour"][String(i+1)]["desc"].as<String>();
+            horaClima[i].temp = root["hour"][i+1]["temp"].as<int>();
+            horaClima[i].windchill = root["hour"][i+1]["windchill"].as<int>();
+            horaClima[i].desc = root["hour"][i+1]["desc"].as<String>();
+
+            Serial.println(horaClima[i].toString());
         }
+
+        Serial.println(weather);
+
+        return root.success();
 
     }
 

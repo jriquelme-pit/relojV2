@@ -16,6 +16,7 @@ char password[] = SECRET_PASS;  // your network key
 String jsonWeather = "";
 
 
+
 class Red {
 public:
     String connect() {
@@ -36,8 +37,15 @@ public:
         if (forceUpdate) {
             jsonWeather = getResponse(HOST, URI, PORT);
         }
-        Serial.println(jsonWeather);
         return jsonWeather;
+    }
+
+    String getHours(int ciclo) {
+        String sUril = String(URI) + "hours/" + String(ciclo);
+        String sCiclo =  getResponse(HOST, sUril , PORT);
+        return sCiclo;
+
+
     }
 
     String getResponse(String sHost, String sUri, long port) {
@@ -56,21 +64,12 @@ public:
 
         sHost.toCharArray(host, sHost.length() + 1);
 
-        Serial.println(sHost);
-        Serial.println(host);
-        Serial.println(sUri);
-        Serial.println(port);
-
-
         if (client.connect(host, port)) {
 
             String URL = sUri;
-            Serial.println("Conectado!!!!!!");
 
-
-            String  URL = sUri;
-
-            client.println("GET " + URL + " HTTP/1.1");
+            //client.println("GET " + URL + " HTTP/1.1"); https 443
+            client.println("GET " + URL + " HTTP/1.0");
             client.print("Host: ");
             client.println(host);
             client.println(
@@ -104,6 +103,7 @@ public:
                     break;
                 }
             }
+            client.stop();
         }
 
         return response;
