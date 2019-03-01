@@ -41,7 +41,7 @@ public:
     HoraClima getHoraClima(int hour){
         return horaClima[hour];
     }
-    void parserJson(String json){
+    void parserJson(String json1, String json2){
         DynamicJsonBuffer jsonBuffer;
 
         Serial.println(json);
