@@ -36,10 +36,12 @@ public:
         if (forceUpdate) {
             jsonWeather = getResponse(HOST, URI, PORT);
         }
+        Serial.println(jsonWeather);
         return jsonWeather;
     }
 
     String getResponse(String sHost, String sUri, long port) {
+
 
         String response = "";
         String headers = "";
@@ -54,9 +56,19 @@ public:
 
         sHost.toCharArray(host, sHost.length() + 1);
 
+        Serial.println(sHost);
+        Serial.println(host);
+        Serial.println(sUri);
+        Serial.println(port);
+
+
         if (client.connect(host, port)) {
 
             String URL = sUri;
+            Serial.println("Conectado!!!!!!");
+
+
+            String  URL = sUri;
 
             client.println("GET " + URL + " HTTP/1.1");
             client.print("Host: ");
