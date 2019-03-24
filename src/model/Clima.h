@@ -58,16 +58,12 @@ public:
         siguiente.max = root["b"]["2"].as<int>();
         siguiente.nombre = root["day"]["b"].as<String>();
 
-
         for (int i = 0; i < 24; i++) {
             horaClima[i] = HoraClima();
             horaClima[i].temp = root["hour"][i]["temp"].as<int>();
             horaClima[i].windchill = root["hour"][i]["windchill"].as<int>();
             horaClima[i].desc = root["hour"][i]["desc"].as<String>();
         }
-
-        Serial.println(weather);
-
         return root.success();
 
     }
