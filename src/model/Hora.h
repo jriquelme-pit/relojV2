@@ -9,7 +9,7 @@ public:
 
     }
 
-    String toString(boolean printHora){
+    String toString(boolean printHora = true){
 
         String spe = " ";
         if(printHora){

@@ -25,6 +25,45 @@ Red red = Red();
 
 RTC_DS3231 rtc;
 
+void updateDataWeater() {
+    bool exito = false;
+    do {
+        String datosTiempo = red.getWeather(true);
+        exito = clima.parserJson(datosTiempo);
+    } while (!exito);
+}
+
+static unsigned long timeMillis;
+static unsigned long timeMillisHours = 0;
+int hours = -1;
+
+
+
+
+void setBrightness() {
+
+    int l = 1;
+    if (hora.hora >= 8 and hora.hora < 19) {
+        l = 255;
+    } else if (hora.hora == 19) {
+        l = 200;
+    } else if (hora.hora == 20) {
+        l = 150;
+     }else if (hora.hora == 21) {
+        l = 100;
+    } else if (hora.hora == 22) {
+        l = 50;
+    } else if (hora.hora >= 23 || hora.hora < 7) {
+        l = 10;
+    } else if (hora.hora == 7) {
+        l = 150;
+    }
+
+    Serial.println("brillo: " + String(l));
+    analogWrite(ligth, l);
+
+}
+
 void setup() {
 
     if (!rtc.begin()) {
@@ -38,27 +77,16 @@ void setup() {
         // Fijar a fecha y hora específica. En el ejemplo, 21 de Enero de 2016 a las 03:00:00
         // rtc.adjust(DateTime(2016, 1, 21, 3, 0, 0));
     }
-
-
-
-
-
     fecha.refresh(rtc.now());
     hora.refresh(rtc.now());
     Serial.begin(19200);
-    pinMode(ligth, OUTPUT);
 
+    setBrightness();
 
+    updateDataWeater();
 
     analogWrite(ligth, 255);
     lcd.cargandoDatos();
-    String ip = red.connect();
-    //Serial.println("Obteniendo el tiempo");
-    String datosTiempo = red.getWeather(true);
-    //Serial.println(datosTiempo);
-
-    //clima.dummy();
-    clima.parserJson(datosTiempo);
 
 
     lcd.clear();
@@ -67,44 +95,39 @@ void setup() {
     lcd.printHora(hora);
     lcd.printClima(clima);
     lcd.printClimaActual(clima, hora);
+    timeMillis = millis();
+
+    hours = hora.hora;
 
 }
-static unsigned long timeMillis = millis();
-int hours = -1;
-
+static unsigned long timeSegundosMillis = 0;
+bool primaryLoad = true;
 void loop() {
     if (millis() - timeMillis > 1000) {
         timeMillis = millis();
         fecha.refresh(rtc.now());
         hora.refresh(rtc.now());
 
-        if((hora.hora == 2 || hora.hora == 6 || hora.hora == 14) && hora.minuto == 0){
-            clima.parserJson(red.getWeather(true));
+        if (hora.minuto == 0) {
+            lcd.clear();
+            updateDataWeater();
             lcd.printClima(clima);
-
-        }
-
-        if(hora.hora != hours and hora.minuto == 0){
-            lcd.printClimaActual(clima, hora);
-            hours = hora.hora;
         }
         lcd.printHora(hora);
         lcd.printFecha(fecha);
+
     }
 
+    if (millis() - timeSegundosMillis > 60000 || primaryLoad) {
+        timeSegundosMillis = millis();
+        if ((hora.hora != hours and hora.minuto == 0) || primaryLoad)  {
+            Serial.println(hora.toString());
+            lcd.printClimaActual(clima, hora);
+            hours = hora.hora;
+            primaryLoad = false;
+            setBrightness();
+        }
 
+    }
 
-    /*analogWrite(ligth, 1);
-    delay(500);
-    analogWrite(ligth, 50);
-    delay(500);
-    analogWrite(ligth, 100);
-    delay(500);
-    analogWrite(ligth, 150);
-    delay(500);
-    analogWrite(ligth, 200);
-    delay(500);
-    analogWrite(ligth, 255);
-    delay(500);
-*/
 }

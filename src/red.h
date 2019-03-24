@@ -6,13 +6,20 @@ char ssid[] = SECRET_SSID;     // your network SSID (name)
 char password[] = SECRET_PASS;  // your network key
 
 //Add a SSL client
-WiFiClientSecure client;
+
+#if PORT == 443
+    WiFiClientSecure client;
+#else
+    WiFiClient client;
+#endif
+
 String jsonWeather = "";
 
 
-class Red{
+
+class Red {
 public:
-    String connect(){
+    String connect() {
         WiFi.mode(WIFI_STA);
         WiFi.disconnect();
         delay(100);
@@ -26,14 +33,23 @@ public:
         return ip.toString();
     }
 
-    String getWeather(boolean forceUpdate=false) {
+    String getWeather(boolean forceUpdate = false) {
         if (forceUpdate) {
-            Serial.println("Obteniendo Informacion de la red");
-            jsonWeather = getResponse(HOST, URI, 443);
+            jsonWeather = getResponse(HOST, URI, PORT);
         }
         return jsonWeather;
     }
+
+    String getHours(int ciclo) {
+        String sUril = String(URI) + "hours/" + String(ciclo);
+        String sCiclo =  getResponse(HOST, sUril , PORT);
+        return sCiclo;
+
+
+    }
+
     String getResponse(String sHost, String sUri, long port) {
+
 
         String response = "";
         String headers = "";
@@ -44,18 +60,20 @@ public:
         long now;
 
         //char host[] = HOST;
-        char host[sHost.length() + 1] ;
+        char host[sHost.length() + 1];
 
         sHost.toCharArray(host, sHost.length() + 1);
 
         if (client.connect(host, port)) {
 
-            String  URL = sUri;
+            String URL = sUri;
 
-            client.println("GET " + URL + " HTTP/1.1");
+            //client.println("GET " + URL + " HTTP/1.1"); https 443
+            client.println("GET " + URL + " HTTP/1.0");
             client.print("Host: ");
             client.println(host);
-            client.println("User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36");
+            client.println(
+                    "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36");
             client.println("cache-control: max-age=0");
             client.println("");
             now = millis();
@@ -64,19 +82,18 @@ public:
                 while (client.available()) {
                     char c = client.read();
                     if (finishedHeaders) {
-                        body=body+c;
+                        body = body + c;
                     } else {
                         if (currentLineIsBlank && c == '\n') {
                             finishedHeaders = true;
-                        }
-                        else {
+                        } else {
                             headers = headers + c;
                         }
                     }
 
                     if (c == '\n') {
                         currentLineIsBlank = true;
-                    }else if (c != '\r') {
+                    } else if (c != '\r') {
                         currentLineIsBlank = false;
                     }
                     gotResponse = true;
@@ -86,6 +103,7 @@ public:
                     break;
                 }
             }
+            client.stop();
         }
 
         return response;
