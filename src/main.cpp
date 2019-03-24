@@ -118,7 +118,7 @@ void loop() {
 
     }
 
-    if (millis() - timeSegundosMillis > 60000) {
+    if (millis() - timeSegundosMillis > 60000 || primaryLoad) {
         timeSegundosMillis = millis();
         if ((hora.hora != hours and hora.minuto == 0) || primaryLoad)  {
             Serial.println(hora.toString());
