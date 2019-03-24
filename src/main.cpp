@@ -109,7 +109,8 @@ void loop() {
         fecha.refresh(rtc.now());
         hora.refresh(rtc.now());
 
-        if ((hora.hora == 2 || hora.hora == 6 || hora.hora == 14) && hora.minuto == 0) {
+        if (hora.minuto == 0) {
+            lcd.clear();
             updateDataWeater();
             lcd.printClima(clima);
         }
