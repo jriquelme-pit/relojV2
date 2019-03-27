@@ -46,13 +46,11 @@ void setBrightness() {
     } else if (hora.hora == 20) {
         l = 150;
     } else if (hora.hora == 21) {
-        l = 100;
-    } else if (hora.hora == 22) {
         l = 50;
-    } else if (hora.hora >= 23 || hora.hora < 7) {
-        l = 10;
+    } else if (hora.hora >= 22 || hora.hora < 7) {
+        l = 2;
     } else if (hora.hora == 7) {
-        l = 150;
+        l = 50;
     }
 
     Serial.println("brillo: " + String(l));
