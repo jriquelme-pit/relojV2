@@ -48,7 +48,7 @@ void setBrightness() {
     } else if (hora.hora == 21) {
         l = 50;
     } else if (hora.hora >= 22 || hora.hora < 7) {
-        l = 2;
+        l = 50;
     } else if (hora.hora == 7) {
         l = 50;
     }
