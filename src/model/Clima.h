@@ -73,7 +73,6 @@ public:
         siguiente.max = root["b"]["2"].as<int>();
         siguiente.nombre = root["day"]["b"].as<String>();
 
-
         for (int i = 0; i < 24; i++) {
             horaClima[i] = HoraClima();
             horaClima[i].temp = root["hour"][i]["temp"].as<int>();

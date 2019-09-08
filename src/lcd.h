@@ -153,6 +153,7 @@ public:
         tft.setTextSize(2);
         tft.setCursor(65, 110);
         tft.println(clima1.temp);
+        Serial.println(clima1.temp);
 
         tft.setTextSize(1);
         tft.setCursor(95, 110);
