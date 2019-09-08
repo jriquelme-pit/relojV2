@@ -48,7 +48,34 @@ static unsigned long timeMillisHours = 0;
 int hours = -1;
 
 
+
+
+void setBrightness() {
+
+    int l = 1;
+    if (hora.hora >= 8 and hora.hora < 19) {
+        l = 255;
+    } else if (hora.hora == 19) {
+        l = 200;
+    } else if (hora.hora == 20) {
+        l = 150;
+     }else if (hora.hora == 21) {
+        l = 100;
+    } else if (hora.hora == 22) {
+        l = 50;
+    } else if (hora.hora >= 23 || hora.hora < 7) {
+        l = 10;
+    } else if (hora.hora == 7) {
+        l = 150;
+    }
+
+    Serial.println("brillo: " + String(l));
+    analogWrite(ligth, l);
+
+}
+
 void setup() {
+    pinMode(ligth, OUTPUT);
 
     if (!rtc.begin()) {
         Serial.println(F("Couldn't find RTC"));
@@ -64,7 +91,8 @@ void setup() {
     fecha.refresh(rtc.now());
     hora.refresh(rtc.now());
     Serial.begin(19200);
-    pinMode(ligth, OUTPUT);
+
+    setBrightness();
 
     updateDataWeater();
 
@@ -80,46 +108,37 @@ void setup() {
     lcd.printClimaActual(clima, hora);
     timeMillis = millis();
 
-}
-
-void setBrightness() {
-
-    if (hora.hora >= 8 and hora.hora < 19) {
-        analogWrite(ligth, 255);
-    } else if (hora.hora = 19) {
-        analogWrite(ligth, 200);
-    } else if (hora.hora = 20) {
-        analogWrite(ligth, 150);
-    } else if (hora.hora = 22) {
-        analogWrite(ligth, 100);
-    } else if (hora.hora >= 23 and hora.hora < 7) {
-        analogWrite(ligth, 1);
-    } else if (hora.hora = 7) {
-        analogWrite(ligth, 150);
-    }
+    hours = hora.hora;
 
 }
-
-
+static unsigned long timeSegundosMillis = 0;
+bool primaryLoad = true;
 void loop() {
     if (millis() - timeMillis > 1000) {
         timeMillis = millis();
         fecha.refresh(rtc.now());
         hora.refresh(rtc.now());
 
-        if ((hora.hora == 2 || hora.hora == 6 || hora.hora == 14) && hora.minuto == 0) {
+        if (hora.minuto == 0) {
+            lcd.clear();
             updateDataWeater();
             lcd.printClima(clima);
         }
         lcd.printHora(hora);
         lcd.printFecha(fecha);
-        setBrightness();
 
-        if (hora.hora != hours and hora.minuto == 0) {
+    }
+
+    if (millis() - timeSegundosMillis > 60000 || primaryLoad) {
+        timeSegundosMillis = millis();
+        if ((hora.hora != hours and hora.minuto == 0) || primaryLoad)  {
             Serial.println(hora.toString());
             lcd.printClimaActual(clima, hora);
             hours = hora.hora;
+            primaryLoad = false;
+            setBrightness();
         }
+
     }
 
 }
