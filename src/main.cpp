@@ -33,6 +33,15 @@ void updateDataWeater() {
     } while (!exito);
 }
 
+void updateFullDate() {
+    bool exito = false;
+    do {
+        String datosTiempo = red.getFullDate(true);
+        exito = clima.parseFullDate(datosTiempo, hora, fecha, rtc);
+
+    } while (!exito);
+}
+
 static unsigned long timeMillis;
 static unsigned long timeMillisHours = 0;
 int hours = -1;
@@ -57,6 +66,7 @@ void setup() {
     pinMode(ligth, OUTPUT);
 
     updateDataWeater();
+    updateFullDate();
 
     analogWrite(ligth, 255);
     lcd.cargandoDatos();

@@ -24,6 +24,7 @@ public:
         WiFi.disconnect();
         delay(100);
 
+        WiFi.hostname("time.local");
         WiFi.begin(ssid, password);
         while (WiFi.status() != WL_CONNECTED) {
             Serial.print(".");
@@ -38,6 +39,12 @@ public:
             jsonWeather = getResponse(HOST, URI, PORT);
         }
         return jsonWeather;
+    }
+
+    String getFullDate() {
+
+        String sUril = String(URI) + "fulldate";
+        return getResponse(HOST, URI, PORT);
     }
 
     String getHours(int ciclo) {

@@ -4,6 +4,7 @@ private:
 public:
     int hora = 0;
     int minuto = 0;
+    int segundos = 0;
 
     Hora(){
 

@@ -17,5 +17,15 @@ public:
         this->mes = now.month();
         this->annio = now.year();
     }
+    void setdia(int dia){
+        this->dia = dia;
+    }
+    void setMes(int mes){
+        this->mes = mes;
+    }
+
+    void setAnnio(int years){
+        this->annio = years
+    }
 
 };
