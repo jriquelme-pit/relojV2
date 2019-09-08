@@ -48,6 +48,9 @@ public:
     bool parseFullDate(String date, Hora hora, Fecha fecha, RTC_DS3231 rtc){
         DynamicJsonBuffer jsonBuffer;
         JsonObject &root = jsonBuffer.parseObject(date);
+        if (!root.success()){
+            return false;
+        }
         fecha.setAnnio(root["y"].as<int>());
         fecha.setMes(root["mm"].as<int>());
         fecha.setdia(root["d"].as<int>());

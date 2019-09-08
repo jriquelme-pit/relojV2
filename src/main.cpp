@@ -31,15 +31,11 @@ bool updateDataWeater() {
 
 }
 
-void updateFullDate() {
-    Serial.println("obteniendo full date");
-    bool exito = false;
-    do {
-        String datosTiempo = red.getFullDate();
-        Serial.println(datosTiempo);
-        exito = clima.parseFullDate(datosTiempo, hora, fecha, rtc);
+bool updateFullDate() {
 
-    } while (!exito);
+    String datosTiempo = red.getFullDate();
+    return clima.parseFullDate(datosTiempo, hora, fecha, rtc);
+
 }
 
 static unsigned long timeMillis;
@@ -79,6 +75,7 @@ void loadAll() {
 }
 
 bool isUpdateDataWeater = false;
+bool isUpdateDataFullDate = false;
 
 
 void setup() {
@@ -101,8 +98,8 @@ void setup() {
     setBrightness();
 
     isUpdateDataWeater = updateDataWeater();
+    isUpdateDataFullDate = updateFullDate();
 
-    //updateFullDate();
 
     analogWrite(ligth, 255);
     lcd.cargandoDatos();
@@ -115,6 +112,7 @@ void setup() {
 
 
 static unsigned long timeSegundosMillis = 0;
+static unsigned long timeSegundosMillis2 = 0;
 bool primaryLoad = true;
 bool hoursLoad = true;
 
@@ -152,12 +150,16 @@ void loop() {
         }
     }
     if (millis() - timeSegundosMillis > 60000 ) {
-        if (hora.hora == 0 && hora.minuto == 0 && checkHora) {
-            updateFullDate();
-            checkHora = false;
+        timeSegundosMillis2 = millis();
+        if (hora.hora == 0 && hora.minuto == 0 ) {
+            isUpdateDataFullDate = false;
         }
-        if (hora.hora == 0 && hora.minuto == 1 && !checkHora) {
-            checkHora = true;
+        if (!isUpdateDataFullDate) {
+            isUpdateDataFullDate = updateFullDate();
+            if(isUpdateDataFullDate){
+                loadAll();
+                setBrightness();
+            }
         }
     }
 
