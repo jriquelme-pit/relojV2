@@ -34,6 +34,7 @@ void updateDataWeater() {
 }
 
 void updateFullDate() {
+    Serial.println("obteniendo full date");
     bool exito = false;
     do {
         String datosTiempo = red.getFullDate();
@@ -96,6 +97,8 @@ void setup() {
 
     updateDataWeater();
 
+    //updateFullDate();
+
     analogWrite(ligth, 255);
     lcd.cargandoDatos();
 
@@ -113,7 +116,9 @@ void setup() {
 }
 static unsigned long timeSegundosMillis = 0;
 bool primaryLoad = true;
+bool checkHora = true;
 void loop() {
+
     if (millis() - timeMillis > 1000) {
         timeMillis = millis();
         fecha.refresh(rtc.now());
@@ -138,7 +143,15 @@ void loop() {
             primaryLoad = false;
             setBrightness();
         }
-
+    }
+    if (millis() - timeSegundosMillis > 60000 ) {
+        if (hora.hora == 0 && hora.minuto == 0 && checkHora) {
+            updateFullDate();
+            checkHora = false;
+        }
+        if (hora.hora == 0 && hora.minuto == 1 && !checkHora) {
+            checkHora = true;
+        }
     }
 
 }

@@ -44,7 +44,7 @@ public:
     String getFullDate() {
 
         String sUril = String(URI) + "fulldate";
-        return getResponse(HOST, URI, PORT);
+        return getResponse(HOST, sUril, PORT);
     }
 
     String getHours(int ciclo) {
