@@ -36,7 +36,8 @@ void updateDataWeater() {
 void updateFullDate() {
     bool exito = false;
     do {
-        String datosTiempo = red.getFullDate(true);
+        String datosTiempo = red.getFullDate();
+        Serial.println(datosTiempo);
         exito = clima.parseFullDate(datosTiempo, hora, fecha, rtc);
 
     } while (!exito);
@@ -66,7 +67,6 @@ void setup() {
     pinMode(ligth, OUTPUT);
 
     updateDataWeater();
-    updateFullDate();
 
     analogWrite(ligth, 255);
     lcd.cargandoDatos();

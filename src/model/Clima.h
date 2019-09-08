@@ -80,10 +80,10 @@ public:
             horaClima[i].windchill = root["hour"][i]["windchill"].as<int>();
             horaClima[i].desc = root["hour"][i]["desc"].as<String>();
 
-            Serial.println(horaClima[i].toString());
+            //Serial.println(horaClima[i].toString());
         }
 
-        Serial.println(weather);
+        //Serial.println(weather);
 
         return root.success();
 

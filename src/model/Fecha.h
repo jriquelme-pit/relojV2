@@ -25,7 +25,7 @@ public:
     }
 
     void setAnnio(int years){
-        this->annio = years
+        this->annio = years;
     }
 
 };
